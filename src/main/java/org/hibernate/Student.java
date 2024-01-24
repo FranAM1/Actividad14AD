@@ -6,6 +6,31 @@ public class Student {
     private String lastname;
     private String email;
     private String phone;
+    private int age;
+
+    // Constructor
+    public Student() {
+    }
+
+    public Student(String name, String lastname, String email, String phone, int age) {
+        this.name = name;
+        this.lastname = lastname;
+        this.email = email;
+        this.phone = phone;
+        this.age = age;
+    }
+
+    @Override
+    public String toString() {
+        return "Student{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", lastname='" + lastname + '\'' +
+                ", email='" + email + '\'' +
+                ", phone='" + phone + '\'' +
+                ", age=" + age +
+                '}';
+    }
 
     // Getters and Setters
     public int getId() {
@@ -46,5 +71,13 @@ public class Student {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
     }
 }

@@ -7,5 +7,6 @@
 		<property column="LASTNAME" name="lastname" type="string" />
 		<property column="EMAIL" name="email" type="string" />
 		<property column="PHONE" name="phone" type="string" />
+		<property column="AGE" name="age" type="int" />
 	</class>
 </hibernate-mapping>
